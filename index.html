@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.ico">
     <title>Ponlork Sok</title>
     <!-- Tailwind CSS CDN script -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,7 +25,7 @@
       body {
         font-family: 'Inter', sans-serif;
         /* Page background image */
-        background-image: url('angkor.webp'); /* Placeholder image */
+        background-image: url('/assets/angkor.webp'); /* Placeholder image */
         background-size: cover;
         background-position: center;
         background-attachment: fixed; /* Keeps background fixed during scroll */
@@ -202,14 +203,14 @@
         </h2>
 
         <!-- Basic Info Paragraph -->
-        <p class="text-center text-gray-700 text-lg mb-8 max-w-3xl mx-auto leading-relaxed bg-blue-50 p-6 rounded-lg shadow-md">
+        <div class="bg-green-50 p-10 rounded-xl shadow-lg border border-green-200 transform hover:scale-105 transition-transform duration-300 md:col-span-2">
           {{ t.about.basicInfo }}
         </p>
 
         <!-- Photo Section -->
         <div class="flex justify-center mb-8">
           <img
-            src="me.jpg"
+            src="assets/me.jpg"
             alt="Your Photo"
             class="rounded-full w-48 h-48 object-cover shadow-lg border-4 border-blue-200 transform hover:scale-105 transition-transform duration-300"
             onerror="this.onerror=null; this.src='https://placehold.co/200x200/ADD8E6/000000?text=Image+Error';"
@@ -218,7 +219,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Education -->
-          <div class="bg-blue-50 p-8 rounded-xl shadow-lg border border-blue-200 transform hover:scale-105 transition-transform duration-300">
+          <div class="bg-green-50 p-10 rounded-xl shadow-lg border border-green-200 transform hover:scale-105 transition-transform duration-300 md:col-span-2">
             <h3 class="text-2xl font-semibold text-blue-600 mb-4 flex items-center">
               <i class="fas fa-graduation-cap text-blue-500 mr-3"></i>
               {{ t.about.educationTitle }}
@@ -229,7 +230,7 @@
           </div>
 
           <!-- Experiences -->
-          <div class="bg-green-50 p-8 rounded-xl shadow-lg border border-green-200 transform hover:scale-105 transition-transform duration-300">
+          <div class="bg-green-50 p-10 rounded-xl shadow-lg border border-green-200 transform hover:scale-105 transition-transform duration-300 md:col-span-2">
             <h3 class="text-2xl font-semibold text-green-600 mb-4 flex items-center">
               <i class="fas fa-briefcase text-green-500 mr-3"></i>
               {{ t.about.experienceTitle }}
@@ -240,7 +241,7 @@
           </div>
 
           <!-- Skills -->
-          <div class="bg-purple-50 p-8 rounded-xl shadow-lg border border-purple-200 transform hover:scale-105 transition-transform duration-300">
+          <div class="bg-green-50 p-10 rounded-xl shadow-lg border border-green-200 transform hover:scale-105 transition-transform duration-300 md:col-span-4">
             <h3 class="text-2xl font-semibold text-purple-600 mb-4 flex items-center">
               <i class="fas fa-lightbulb text-purple-500 mr-3"></i>
               {{ t.about.skillsTitle }}
@@ -418,22 +419,24 @@
               },
               about: {
                 title: 'About Me',
-                basicInfo: 'Hello! I am Ponlork Sok, a passionate software developer and data enthusiast with a strong background in building robust web applications and designing efficient data solutions. I thrive on solving complex problems and transforming data into actionable insights. My journey in technology has equipped me with a diverse skill set, allowing me to contribute effectively to various stages of software and data lifecycles.',
+                basicInfo: 'Hello! I am Ponlork Sok, from Takeo province, 1981. A passionate software developer and data enthusiast with a strong background in building robust web applications and designing efficient data solutions. I thrive on solving complex problems and transforming data into actionable insights. My journey in technology has equipped me with a diverse skill set, allowing me to contribute effectively to various stages of software and data lifecycles.',
                 educationTitle: 'Education',
                 education: [
-                  'Master of Data Science, 2026',
-                  'Bachelor of Computer Science, 2003',
-                  'Bac II, 1999',
+                  'Master of Data Science, 2026, RUPP',
+                  'Software Development, 2025, CADT',
+                  'Bachelor of Computer Science, 2003, RUPP',
+                  'Bac II, 1999,',
                 ],
                 experienceTitle: 'Experiences',
                 experience: [
-                  'Software Developer, NIPH',
-                  'Data Management, CWCC',
-                  'GIS officer, MLUC',
+                  'Software Developer, NIPH, Today',
+                  'Data Management, CWCC, 2018',
+                  'GIS officer, MLUC, 2005',
                 ],
                 skillsTitle: 'Skills',
                 skills: [
                   'Software Engineering',
+                  'Software Development',
                   'Data Engineering',
                   'Data Science',
                   'PHP',
@@ -486,7 +489,7 @@
               },
               about: {
                 title: 'អំពីខ្ញុំ',
-                basicInfo: 'សួស្តី! ខ្ញុំបាទ ពន្លក សុខ ជាអ្នកអភិវឌ្ឍន៍កម្មវិធី និងជាអ្នកចូលចិត្តទិន្នន័យ ដែលមានបទពិសោធន៍យ៉ាងរឹងមាំក្នុងការកសាងកម្មវិធីគេហទំព័រ និងរកដំណោះស្រាយទិន្នន័យប្រកបដោយប្រសិទ្ធភាព។ ខ្ញុំរីករាយនឹងការដោះស្រាយបញ្ហាស្មុគស្មាញ និងការបំប្លែងទិន្នន័យទៅជាការយល់ដឹងដែលអាចអនុវត្តបាន ជំនួយដល់ការធ្វើផែនការណ៍ ការសម្រេចចិត្តបានត្រឹមត្រូវក្នុងអាជីវកម្មរបស់លោកអ្នក។',
+                basicInfo: 'សួស្តី! ខ្ញុំបាទ សុខ ពន្លក មកពីខេត្តតាកែវ កើតឆ្នាំ ១៩៨១។ ជាអ្នកអភិវឌ្ឍន៍កម្មវិធី និងជាអ្នកចូលចិត្តទិន្នន័យ ដែលមានបទពិសោធន៍យ៉ាងរឹងមាំក្នុងការកសាងកម្មវិធីគេហទំព័រ និងរកដំណោះស្រាយទិន្នន័យប្រកបដោយប្រសិទ្ធភាព។ ខ្ញុំរីករាយនឹងការដោះស្រាយបញ្ហាស្មុគស្មាញ និងការបំប្លែងទិន្នន័យទៅជាការយល់ដឹងដែលអាចអនុវត្តបាន ជំនួយដល់ការធ្វើផែនការណ៍ ការសម្រេចចិត្តបានត្រឹមត្រូវក្នុងអាជីវកម្មរបស់លោកអ្នក។',
                 educationTitle: 'ការអប់រំ',
                 education: [
                   'បរិញ្ញាបត្រជាន់ខ្ពស់វិទ្យាសាស្ត្រទិន្នន័យ',
