@@ -202,11 +202,6 @@
           {{ t.about.title }}
         </h2>
 
-        <!-- Basic Info Paragraph -->
-        <div class="bg-green-50 p-10 rounded-xl shadow-lg border border-green-200 transform hover:scale-105 transition-transform duration-300 md:col-span-2">
-          {{ t.about.basicInfo }}
-        </p>
-
         <!-- Photo Section -->
         <div class="flex justify-center mb-8">
           <img
@@ -218,6 +213,12 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Basic Info Paragraph -->
+        <div class="bg-green-50 p-10 rounded-xl shadow-lg border border-green-200 transform hover:scale-105 transition-transform duration-300 md:col-span-4">
+            {{ t.about.basicInfo }}
+        </div>
+
           <!-- Education -->
           <div class="bg-green-50 p-10 rounded-xl shadow-lg border border-green-200 transform hover:scale-105 transition-transform duration-300 md:col-span-2">
             <h3 class="text-2xl font-semibold text-blue-600 mb-4 flex items-center">
